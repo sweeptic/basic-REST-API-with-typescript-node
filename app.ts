@@ -2,6 +2,10 @@ const num1Element = document.getElementById('num1') as HTMLInputElement;
 const num2Element = document.getElementById('num2') as HTMLInputElement;
 const buttonElement = document.querySelector('button')!;
 
+const numResults: number[] = []
+const textResults: string[] = []
+
+
 //union types
 function add(num1: number | string, num2: number | string) {
 
@@ -15,6 +19,10 @@ function add(num1: number | string, num2: number | string) {
    return +num1 + +num2;
 }
 
+function printResult(resultObj: { val: number; timestamp: Date }) {
+   console.log(resultObj.val)
+}
+
 
 buttonElement.addEventListener('click', () => {
    const num1 = num1Element.value;
@@ -23,6 +31,11 @@ buttonElement.addEventListener('click', () => {
    //only string or numbers
    const result = add(+num1, +num2);
    const stringResult = add(num1, num2);
-   console.log(result)
-   console.log(stringResult)
+
+   numResults.push(result as number);
+   textResults.push(stringResult as string)
+
+   printResult({ val: result as number, timestamp: new Date() });
+
+   console.log(numResults, textResults)
 })
