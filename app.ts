@@ -11,4 +11,4 @@ const port = 3000;
 app.use(bodyParser.json());
 app.use(todosRoutes);
 
-app.listen({ port: 3000 });
+app.listen({ port: 8080 });

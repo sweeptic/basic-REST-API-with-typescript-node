@@ -10,4 +10,4 @@ const app = express_1.default();
 const port = 3000;
 app.use(body_parser_1.default.json());
 app.use(todos_1.default);
-app.listen({ port: 3000 });
+app.listen({ port: 8080 });
