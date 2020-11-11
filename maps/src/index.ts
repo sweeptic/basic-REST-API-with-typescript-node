@@ -7,8 +7,8 @@ import { User } from './user';
 const user = new User();
 const company = new Company();
 
-console.log(user);
-console.log(company);
+// console.log(user);
+// console.log(company);
 
 new google.maps.Map(document.getElementById('map'), {
   zoom: 1,
