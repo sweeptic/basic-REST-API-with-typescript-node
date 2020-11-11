@@ -19,6 +19,7 @@
   "homepage": "https://github.com/sweeptic/nodejs-typescript#readme",
   "dependencies": {
     "@types/faker": "^5.1.4",
+    "@types/googlemaps": "^3.40.3",
     "axios": "^0.21.0",
     "faker": "^5.1.0"
   },
