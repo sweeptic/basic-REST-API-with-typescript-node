@@ -1,5 +1,9 @@
 import faker from 'faker';
 
+export default 'red';
+// export const red = 'red';
+
+//export very specific variables
 export class User {
   name: string;
   location: {
