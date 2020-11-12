@@ -1,4 +1,4 @@
-// import { Company } from './Company';
+import { Company } from './Company';
 import { CustomMap } from './CustomMap';
 import { User } from './user';
 
@@ -6,9 +6,10 @@ import { User } from './user';
 // import color from './User';
 
 const user = new User();
+const company = new Company();
 const customMap = new CustomMap('map');
 customMap.addUserMarker(user);
+customMap.addCompanyMarker(company);
 
-// const company = new Company();
 // console.log(user);
 // console.log(company);
