@@ -8,8 +8,7 @@ import { User } from './user';
 const user = new User();
 const company = new Company();
 const customMap = new CustomMap('map');
+
+//implicit check
 customMap.addMarker(user);
 customMap.addMarker(company);
-
-// console.log(user);
-// console.log(company);
